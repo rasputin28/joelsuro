@@ -765,6 +765,12 @@ export default function Page() {
                     necesitan escalar.
                   </p>
                   <p>
+                    Emprendedor y consultor en IA para distribuidoras y
+                    fabricantes B2B en México y LATAM. Experiencia en mapeo de
+                    procesos, transformación digital, inteligencia artificial y
+                    Big Data.
+                  </p>
+                  <p>
                     Mi enfoque en IA es práctico: no se trata de implementar
                     tecnología por moda, sino de identificar dónde realmente
                     impacta el negocio — en eficiencia operativa, márgenes o
@@ -797,12 +803,6 @@ export default function Page() {
                       priority={false}
                     />
                   </div>
-                  <p className="mt-4 text-sm leading-relaxed text-[color:var(--color-muted)]">
-                    Joel Suro. Emprendedor y consultor en IA para distribuidoras
-                    y fabricantes B2B en México y LATAM. Experiencia en mapeo de
-                    procesos, transformación digital, inteligencia artificial y Big
-                    Data.
-                  </p>
                 </div>
               </Reveal>
             </div>
