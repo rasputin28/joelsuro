@@ -750,7 +750,7 @@ export default function Page() {
               <Reveal delay={160} className="md:col-span-7">
                 <div className="space-y-6 text-base md:text-lg leading-relaxed text-[color:var(--color-ink)]">
                   <p>
-                    Soy Joel Suro, cofundador y arquitecto técnico de{" "}
+                    Soy Joel Suro Villalobos, arquitecto de soluciones de IA en{" "}
                     <a
                       href="https://www.omna.club/"
                       target="_blank"
