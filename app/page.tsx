@@ -23,7 +23,7 @@ const NAV_LINKS: { href: string; label: string }[] = [
 const HERO_STATS: { number: string; label: string }[] = [
   { number: "200+", label: "Proyectos con mi equipo" },
   { number: "9", label: "Países" },
-  { number: "10+", label: "Años de experiencia" },
+  { number: "5+", label: "Años de experiencia" },
 ];
 
 const DISTRIBUCION_BULLETS: string[] = [
@@ -103,7 +103,7 @@ const AHORA: { number: string; title: string; body: string }[] = [
   },
   {
     number: "74%",
-    title: "De empresas lucha para escalar IA",
+    title: "De las empresas no logra escalar IA",
     body: "BCG reporta que 74% de las empresas no logra escalar su implementación de IA. La diferencia entre las que sí lo logran: empezaron por entender su operación antes de construir.",
   },
 ];
@@ -130,7 +130,7 @@ const DIFERENCIADORES: { title: string; body: string }[] = [
 const POR_QUE_YO_STATS: { number: string; label: string }[] = [
   { number: "200+", label: "Proyectos con mi equipo en OMNA" },
   { number: "9", label: "Países" },
-  { number: "10+", label: "Años de experiencia" },
+  { number: "5+", label: "Años de experiencia" },
 ];
 
 /**
@@ -139,7 +139,7 @@ const POR_QUE_YO_STATS: { number: string; label: string }[] = [
  */
 const JOEL_PHOTO = {
   src: "/joel.png",
-  alt: "Joel Suro — consultor en IA para distribuidoras y fabricantes",
+  alt: "Joel Suro — negocio, datos y tecnología",
 };
 
 const CLIENT_LOGOS: { name: string; src: string }[] = [
@@ -359,8 +359,8 @@ export default function Page() {
           <div className="max-w-6xl mx-auto px-6 md:px-12 py-24 md:py-32 w-full">
             <Reveal>
               <SectionLabel>
-                Joel Suro Villalobos · Consultoría en IA para distribuidoras y
-                fabricantes
+                Joel Suro Villalobos · Donde se cruzan negocio, datos y
+                tecnología
               </SectionLabel>
             </Reveal>
 
@@ -369,12 +369,12 @@ export default function Page() {
                 id="hero-title"
                 className="mt-6 md:mt-8 text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.02] tracking-tight text-[color:var(--color-ink)] max-w-5xl"
               >
-                El <span className="font-serif font-normal">70%</span> de tus
-                pedidos llegan por WhatsApp. El{" "}
-                <span className="font-serif font-normal">100%</span> se capturan
-                a mano. Y probablemente ya sabes que eso te está costando.
+                Sabes que la IA puede cambiar tu operación.
+                <br />
+                Pero no sabes cómo.
               </h1>
             </Reveal>
+       
 
             <Reveal delay={160}>
               <p className="mt-8 md:mt-10 text-lg md:text-xl text-[color:var(--color-muted)] max-w-3xl leading-relaxed">
@@ -415,7 +415,9 @@ export default function Page() {
         >
           <div className="max-w-6xl mx-auto px-6 md:px-12 py-24 md:py-32">
             <Reveal>
-              <SectionLabel>El día a día hoy</SectionLabel>
+              <SectionLabel>
+                Lo que pasa cuando la tecnología no está bien puesta
+              </SectionLabel>
             </Reveal>
 
             <Reveal delay={80}>
@@ -423,7 +425,8 @@ export default function Page() {
                 id="problema-title"
                 className="mt-6 md:mt-8 text-4xl md:text-6xl font-bold leading-tight tracking-tight text-[color:var(--color-ink)] max-w-4xl"
               >
-                Así opera tu empresa hoy. Y cuesta más de lo que parece.
+                Estos problemas no se resuelven con más gente. Tampoco con
+                cualquier software.
               </h2>
             </Reveal>
 
@@ -483,7 +486,9 @@ export default function Page() {
         >
           <div className="max-w-6xl mx-auto px-6 md:px-12 py-24 md:py-32">
             <Reveal>
-              <SectionLabel>El costo real</SectionLabel>
+              <SectionLabel>
+                El costo de no saber dónde poner la tecnología
+              </SectionLabel>
             </Reveal>
 
             <Reveal delay={80}>
@@ -491,7 +496,8 @@ export default function Page() {
                 id="costo-title"
                 className="mt-6 md:mt-8 text-4xl md:text-6xl font-bold leading-tight tracking-tight text-[color:var(--color-ink)] max-w-4xl"
               >
-                No resolver esto tiene un precio todos los meses.
+                Cada mes sin resolverlo es dinero, clientes y oportunidades que
+                se van.
               </h2>
             </Reveal>
 
@@ -518,7 +524,9 @@ export default function Page() {
         >
           <div className="max-w-6xl mx-auto px-6 md:px-12 py-24 md:py-32">
             <Reveal>
-              <SectionLabel>La tierra prometida</SectionLabel>
+              <SectionLabel>
+                Cuando la tecnología está donde debe estar
+              </SectionLabel>
             </Reveal>
 
             <Reveal delay={80}>
@@ -526,7 +534,8 @@ export default function Page() {
                 id="otro-lado-title"
                 className="mt-6 md:mt-8 text-4xl md:text-6xl font-bold leading-tight tracking-tight text-[color:var(--color-ink)] max-w-4xl"
               >
-                Así se ve la operación del otro lado.
+                Esto pasa cuando alguien que entiende tu negocio decide qué
+                automatizar.
               </h2>
             </Reveal>
 
@@ -567,7 +576,8 @@ export default function Page() {
                 id="ahora-title"
                 className="mt-6 md:mt-8 text-4xl md:text-6xl font-bold leading-tight tracking-tight text-[color:var(--color-ink)] max-w-4xl"
               >
-                El mercado ya se está moviendo. Quien automatiza primero, gana.
+                La tecnología ya está lista. La diferencia está en cómo la
+                implementas.
               </h2>
             </Reveal>
 
@@ -605,8 +615,7 @@ export default function Page() {
                 id="resultados-title"
                 className="mt-6 md:mt-8 text-4xl md:text-6xl font-bold leading-tight tracking-tight text-[color:var(--color-ink)] max-w-4xl"
               >
-                Mismo contenido que he presentado en sala con directores y
-                dueños.
+                Primero entendimos el negocio. Después construimos.
               </h2>
             </Reveal>
 
@@ -750,19 +759,19 @@ export default function Page() {
               <Reveal delay={160} className="md:col-span-7">
                 <div className="space-y-6 text-base md:text-lg leading-relaxed text-[color:var(--color-ink)]">
                   <p>
-                    Soy Joel Suro Villalobos, arquitecto de soluciones de IA en{" "}
+                    Soy Joel Suro Villalobos, arquitecto de{" "}
                     <a
                       href="https://www.omna.club/"
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                       className="underline decoration-[color:var(--color-hairline)] underline-offset-4 hover:decoration-[color:var(--color-ink)] transition-colors"
                     >
-                      OMNA
+                      soluciones de IA
                     </a>
-                    . Llevo más de 10 años diseñando y construyendo sistemas
-                    para empresas medianas en LATAM, especialmente en entornos
-                    donde la operación, los datos y la toma de decisiones
-                    necesitan escalar.
+                    . Llevo más de 5 años diseñando y construyendo
+                    sistemas para empresas medianas en LATAM, especialmente en
+                    entornos donde la operación, los datos y la toma de
+                    decisiones necesitan escalar.
                   </p>
                   <p>
                     Emprendedor y consultor en IA para distribuidoras y
@@ -876,21 +885,22 @@ export default function Page() {
                 id="cta-final-title"
                 className="mt-6 md:mt-8 text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tight text-white"
               >
-                Una sola pregunta.
+                Una conversación. Sin pitch.
               </h2>
             </Reveal>
 
             <Reveal delay={160}>
               <p className="mt-8 text-xl md:text-2xl text-gray-300 max-w-2xl">
-                ¿Hay alguno de estos procesos que esté costándote hoy?
+                Si sabes que la IA puede ayudarte pero no tienes claro por
+                dónde empezar, en 30 minutos lo resolvemos.
               </p>
             </Reveal>
 
             <Reveal delay={240}>
               <p className="mt-6 text-base md:text-lg leading-relaxed text-gray-400 max-w-2xl">
-                Si la respuesta es sí, vale la pena una conversación de 30
-                minutos. Sin presentación, sin pitch. Entendemos tu caso y te
-                digo si puedo ayudarte o no.
+                Analizamos tu operación, identificamos dónde está el mayor
+                impacto, y te digo si puedo ayudarte o no. Sin presentación, sin
+                compromiso.
               </p>
             </Reveal>
 
