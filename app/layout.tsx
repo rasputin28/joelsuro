@@ -17,6 +17,11 @@ const instrumentSerif = Instrument_Serif({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://joelsuro.com"),
+  icons: {
+    icon: [],
+    apple: [],
+    shortcut: [],
+  },
   title: "Joel Suro | Consultoría en IA para distribuidoras y fabricantes",
   description:
     "Cofundador de OMNA. 200+ implementaciones en 9 países. Ayudo a dueños de empresas medianas a invertir en IA sin tirar el dinero. Agenda 30 minutos.",
