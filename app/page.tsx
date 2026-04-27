@@ -9,8 +9,10 @@ import {
   type AnchorHTMLAttributes,
 } from "react";
 
-const CTA_HREF =
+const WHATSAPP_HREF =
   "https://wa.me/525520729410?text=Hola%20Joel%2C%20vengo%20de%20joelsuro.com%20y%20quiero%20agendar%20los%2030%20minutos.%0A%0APara%20aprovechar%20mejor%20la%20llamada%3A%0A%0AEmpresa%3A%20%0AMi%20rol%3A%20%0AIndustria%3A%20%0AFacturaci%C3%B3n%20anual%20aproximada%3A%20%0AEl%20proceso%20que%20m%C3%A1s%20me%20est%C3%A1%20costando%20hoy%3A%20%0A%0AS%C3%A9%20que%20es%20una%20llamada%20sin%20pitch.%20Lo%20que%20busco%20espec%C3%ADficamente%20es%3A";
+
+const CALENDAR_HREF = "https://calendar.app.google/xC2UqWSpWWfsmzn56";
 
 const NAV_LINKS: { href: string; label: string }[] = [
   { href: "#problema", label: "El problema" },
@@ -131,6 +133,23 @@ const POR_QUE_YO_STATS: { number: string; label: string }[] = [
   { number: "200+", label: "Proyectos con mi equipo en OMNA" },
   { number: "9", label: "Países" },
   { number: "5+", label: "Años de experiencia" },
+];
+
+const SOCIAL_LINKS: { href: string; label: string }[] = [
+  { href: "https://www.youtube.com/@joelsuro", label: "YouTube" },
+  { href: "https://www.linkedin.com/in/joelsuro", label: "LinkedIn" },
+  {
+    href: "https://www.instagram.com/joelsuroai?igsh=N3RpcHBxYTU0eDc4&utm_source=qr",
+    label: "Instagram",
+  },
+  {
+    href: "https://www.facebook.com/profile.php?id=100064931460320",
+    label: "Facebook",
+  },
+  {
+    href: "https://www.tiktok.com/@joel.suro?_r=1&_t=ZS-95tJ0wpkwsC",
+    label: "TikTok",
+  },
 ];
 
 /**
@@ -280,7 +299,7 @@ function CTAButton({
   return (
     <a
       {...props}
-      href={props.href ?? CTA_HREF}
+      href={props.href ?? CALENDAR_HREF}
       target={props.target ?? "_blank"}
       rel={props.rel ?? "noopener noreferrer"}
       className={[base, variants[variant], className].join(" ")}
@@ -342,8 +361,8 @@ export default function Page() {
           </ul>
 
           <div className="ml-auto">
-            <CTAButton variant="nav" href={CTA_HREF}>
-              Agendar 30 minutos
+            <CTAButton variant="nav" href={CALENDAR_HREF}>
+              Agenda conmigo 30
             </CTAButton>
           </div>
         </nav>
@@ -387,12 +406,18 @@ export default function Page() {
 
             <Reveal delay={240}>
               <div className="mt-10">
-                <CTAButton href={CTA_HREF}>
-                  Agendar 30 minutos conmigo
-                </CTAButton>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <CTAButton href={CALENDAR_HREF}>Agenda conmigo 30</CTAButton>
+                  <CTAButton
+                    href={WHATSAPP_HREF}
+                    className="bg-green-600 hover:bg-green-700"
+                  >
+                    Escríbeme por WhatsApp
+                  </CTAButton>
+                </div>
                 <p className="mt-4 text-sm text-[color:var(--color-muted)]">
-                  Sin pitch. Sin presentación. Solo preguntas y respuestas
-                  concretas.
+                  En esos 30 minutos te ayudo a armar tu estrategia de IA sin
+                  costo.
                 </p>
               </div>
             </Reveal>
@@ -906,15 +931,44 @@ export default function Page() {
 
             <Reveal delay={320}>
               <div className="mt-12">
-                <CTAButton variant="inverse" href={CTA_HREF}>
-                  Agendar 30 minutos
-                </CTAButton>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <CTAButton variant="inverse" href={CALENDAR_HREF}>
+                    Agenda conmigo 30
+                  </CTAButton>
+                  <CTAButton
+                    href={WHATSAPP_HREF}
+                    className="bg-green-600 hover:bg-green-700"
+                  >
+                    Escríbeme por WhatsApp
+                  </CTAButton>
+                </div>
               </div>
             </Reveal>
 
           </div>
         </section>
       </main>
+      <footer className="bg-white border-t border-[color:var(--color-hairline)]">
+        <div className="max-w-6xl mx-auto px-6 md:px-12 py-10 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <p className="text-sm text-[color:var(--color-muted)]">
+            Joel Suro Villalobos
+          </p>
+          <ul className="flex flex-wrap items-center gap-x-6 gap-y-2">
+            {SOCIAL_LINKS.map((social) => (
+              <li key={social.label}>
+                <a
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-[color:var(--color-ink)] hover:text-[color:var(--color-muted)] transition-colors"
+                >
+                  {social.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </footer>
     </>
   );
 }
