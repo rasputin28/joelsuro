@@ -1,17 +1,19 @@
-# AVANCES — noche 2026-10-04
+# AVANCES — noche 2026-10-13
 
 ## Hecho
 
-- `wiki/certificaciones.md` consolidada: eliminadas 30+ notas diarias de bitácora, reemplazadas por estado actual (95 días sin acción, 4 decisiones pendientes). La wiki ahora guarda conocimiento estable, no bitácora diaria.
-- `wiki/INDEX.md` actualizada a 2026-10-04.
+- `PENDIENTES.md` verificado: sin ítems abiertos (lote 2026-07-01 completo; sin lotes nuevos).
+- `~/noche/inbox/` sin entradas nuevas revisadas (último ítem conocido: 2026-07-22).
+- `wiki/INDEX.md` — fecha de revisión actualizada a 2026-10-13.
+- `wiki/certificaciones.md` — contador actualizado a 104 días sin acción.
 
 ## Atascado / Fallas
 
-Sin tareas ejecutables en `PENDIENTES.md`. Las dos tareas del lote 2026-07-01 siguen marcadas completas. Sin inbox nocturno nuevo.
+Sin tareas ejecutables. `PENDIENTES.md` vacío de ítems abiertos hace 104 días.
 
-## Decisiones pendientes (acumuladas — 95 días desde 2026-07-01)
+## Decisiones pendientes (acumuladas — 104 días desde 2026-07-01)
 
-1. **AZ-104 — ¿se presentó el examen?** Fecha objetivo era 2026-08-12 (53 días vencida).
+1. **AZ-104 — ¿se presentó el examen?** Fecha objetivo era 2026-08-12 (62 días vencida).
 2. **AZ-104 voucher:** ¿Trifecta Studio tiene voucher corporativo / descuento Microsoft Partner antes de pagar $165 USD?
 3. **AZ-104 modalidad:** ¿Presencial (Pearson VUE) o en línea?
 4. **Nueva fecha objetivo AZ-104** si sigue en pie.
@@ -19,9 +21,10 @@ Sin tareas ejecutables en `PENDIENTES.md`. Las dos tareas del lote 2026-07-01 si
 
 ## Entregables
 
-- `wiki/certificaciones.md` — consolidada (conocimiento estable, sin bitácora acumulada)
-- `wiki/INDEX.md` — fecha actualizada
+- `AVANCES.md` — sobrescrito (esta noche)
+- `wiki/INDEX.md` — fecha de revisión actualizada a 2026-10-13
+- `wiki/certificaciones.md` — contador actualizado a 104 días
 
 ## Nota
 
-**Noche sin producción de código.** `PENDIENTES.md` no tiene tareas nuevas desde 2026-07-01 (95 días). Las 5 decisiones acumuladas requieren respuesta de Joel para desbloquear. El periódico debe reflejar que este proyecto lleva ~3 meses en espera de señal humana.
+**Noche sin producción.** Las 5 decisiones acumuladas siguen bloqueando cualquier avance en certificaciones. El sitio joelsuro.com no tiene tareas técnicas abiertas. Requiere señal humana.
