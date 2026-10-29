@@ -38,6 +38,8 @@ Certificaciones técnicas de Joel en progreso o pendientes de gestión.
 - **Nota 2026-09-08:** 27 días post-deadline. Sin señal. 69 días sin acción desde la tarea original (2026-07-01). Estado: **limbo persistente**. Las 4 decisiones pendientes permanecen sin respuesta. El sistema no puede avanzar sin confirmación humana.
 - **Nota 2026-09-09:** 28 días post-deadline. Sin señal. 70 días sin acción desde la tarea original (2026-07-01). Estado: **limbo persistente**. Las 4 decisiones pendientes permanecen sin respuesta. El sistema no puede avanzar sin confirmación humana.
 - **Nota 2026-10-26:** 75 días post-deadline. 117 días sin acción desde la tarea original (2026-07-01). Estado: **limbo persistente**. Sin señal nueva desde 2026-09-09 (47 días sin entrada en wiki). Las 4 decisiones siguen sin respuesta: presentación/reprogramación/cancelación del examen, voucher corporativo, modalidad, costo. El sistema cierra este hilo hasta recibir confirmación humana.
+- **Nota 2026-10-27:** 76 días post-deadline. 118 días sin acción. Estado: **limbo persistente**. Sin señal nueva. Sin inbox nocturno. Las 4 decisiones permanecen sin respuesta.
+- **Nota 2026-10-29:** 78 días post-deadline. 120 días sin acción desde la tarea original (2026-07-01). Estado: **limbo persistente**. Sin inbox nocturno. Sin señal nueva. Las 4 decisiones permanecen sin respuesta.
 
 ### Claude Certified Architect — Anthropic
 - **Elegibilidad:** miembro del Claude Partner Network (joel@trifecta.studio)
