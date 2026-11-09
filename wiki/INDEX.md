@@ -3,7 +3,7 @@
 Sitio personal de Joel Suro Villalobos. Landing page de consultoría en IA para distribuidoras y fabricantes B2B en México y LATAM.
 
 **Estado:** activo, en mantenimiento continuo.
-**Última revisión wiki:** 2026-11-03
+**Última revisión wiki:** 2026-11-09
 **Stack:** Next.js 15 (App Router), Tailwind CSS, desplegado en Vercel.
 **Repositorio:** `/Users/joelsurovillalobos/Desa/JOEL/joelsuro.com`
 

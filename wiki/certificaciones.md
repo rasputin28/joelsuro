@@ -8,7 +8,7 @@ Certificaciones técnicas de Joel en progreso o pendientes de gestión.
 - **Plan de estudio:** `docs/2026-07-01-plan-az104.md` — 6 semanas, 3 sesiones/semana × 1.5h, ~27h totales
 - **Materiales:** Microsoft Learn (gratuito), John Savill Study Cram (YouTube), Whizlabs para práctica
 - **Costo del examen:** ~$165 USD
-- **Estado actual (2026-11-03):** **LIMBO** — 83 días post-deadline, 125 días sin acción desde la tarea original (2026-07-01). Joel no ha confirmado si presentó, reprogramó o canceló. Próxima acción es exclusivamente de Joel.
+- **Estado actual (2026-11-09):** **LIMBO** — 89 días post-deadline, 131 días sin acción desde la tarea original (2026-07-01). Joel no ha confirmado si presentó, reprogramó o canceló. Próxima acción es exclusivamente de Joel.
 - **Decisiones bloqueantes (sin respuesta desde 2026-07-01):**
   1. ¿Se presentó el examen el 2026-08-12? ¿Se reprogramó? ¿Se descartó?
   2. ¿Trifecta Studio tiene voucher corporativo / descuento Microsoft Partner antes de pagar ~$165 USD?
