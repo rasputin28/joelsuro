@@ -5,7 +5,7 @@ Certificaciones técnicas de Joel en progreso o pendientes de gestión.
 ## AZ-104 — Microsoft Azure Administrator — LIMBO
 
 - **Fecha objetivo original:** 2026-08-12 — **VENCIDA. Sin confirmación de presentación.**
-- **Estado:** limbo desde 2026-08-12. 104 días sin acción desde la tarea original (2026-07-01).
+- **Estado:** limbo desde 2026-08-12. 116 días sin acción desde la tarea original (2026-07-01).
 - **Plan de estudio:** `docs/2026-07-01-plan-az104.md` — 6 semanas, 3 sesiones/semana × 1.5h, ~27h totales
 - **Materiales:** Microsoft Learn (gratuito), John Savill Study Cram (YouTube), Whizlabs para práctica
 - **Costo del examen:** ~$165 USD
