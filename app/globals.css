@@ -2,18 +2,19 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #0a0a0a;
+  --foreground: #1f2937;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-ink: #0a0a0a;
-  --color-muted: #666666;
-  --color-cream: #faf8f5;
-  --color-hairline: #e5e5e5;
+  --color-ink: #0a1f44;
+  --color-body: #1f2937;
+  --color-muted: #5b6472;
+  --color-cream: #f6f5f1;
+  --color-hairline: #e3e5ea;
   --font-sans: var(--font-inter);
-  --font-serif: var(--font-instrument-serif);
+  --font-serif: var(--font-fraunces);
 }
 
 html {
@@ -27,6 +28,16 @@ body {
     "Segoe UI", Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+/* Títulos en serif editorial (docs/DESIGN.md). Fuera de @layer a propósito:
+   gana sobre las utilidades font-bold/tracking de Tailwind. */
+h1,
+h2,
+h3 {
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 @media (prefers-reduced-motion: reduce) {
