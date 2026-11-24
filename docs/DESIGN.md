@@ -6,7 +6,7 @@ AI Safety México · investigación. Sin CTA de venta; contacto discreto al fina
 
 ## Principios
 1. Se lee como una publicación seria, no como una startup: mucho blanco, serif grande, pocas cosas por pantalla.
-2. Un solo color de acento (marino). Nada de verdes de WhatsApp ni degradados.
+2. Marino como base; cian (IA) y ámbar (seguridad) sólo en ilustración, etiquetas y acentos. Nada de degradados.
 3. Las cifras y los papers son la prueba; el diseño no la adorna.
 
 ## Tokens (`app/globals.css`)
@@ -17,6 +17,15 @@ AI Safety México · investigación. Sin CTA de venta; contacto discreto al fina
 | `--color-muted` | `#5B6472` | etiquetas, metadatos |
 | `--color-cream` | `#F6F5F1` | secciones alternas |
 | `--color-hairline` | `#E3E5EA` | divisores |
+| `--color-night` | `#071430` | encabezado, barra, fondos de ilustración |
+| `--color-signal` | `#22D3EE` cian | circuitos / IA y agentes |
+| `--color-safety` | `#F5B544` ámbar | AI safety (color de señalización industrial) |
+
+## Ilustración (2026-11-24)
+Isométrica propia, generada por `scripts/escena.mjs` → `public/escena*.svg`: fábrica, banda con brazo
+robótico, almacén, chip de IA y escudo, unidos por circuitos. Cian = IA, ámbar = seguridad.
+Se regenera con `node scripts/escena.mjs`; los colores viven en el objeto `C` del script.
+Mockup aprobado: `docs/mockups/2026-11-24-hero-marca.png`.
 
 ## Tipografía
 - Títulos (h1–h3): **Fraunces** (serif), peso 600, tracking −0.02em.

@@ -26,6 +26,7 @@ const trabajo = (t: Dict) => [
     org: "OMNA",
     href: "https://www.omna.club/",
     logo: "/logos/omna.png",
+    escena: "/escena-fabrica.svg",
     body: t.work.omna.body,
   },
   {
@@ -33,6 +34,7 @@ const trabajo = (t: Dict) => [
     org: t.work.aismx.org,
     href: "https://www.aismx.org/",
     logo: "/logos/aismx.png",
+    escena: "/escena-escudo.svg",
     body: t.work.aismx.body,
   },
 ];
@@ -255,10 +257,8 @@ export default function Landing({ lang, t }: { lang: Locale; t: Dict }) {
       {/* SECCIÓN 1: NAV */}
       <header
         className={[
-          "sticky top-0 z-50 bg-white/90 backdrop-blur border-b transition-shadow duration-200",
-          scrolled
-            ? "border-[color:var(--color-hairline)] shadow-sm"
-            : "border-gray-100",
+          "sticky top-0 z-50 bg-[color:var(--color-night)]/95 backdrop-blur border-b transition-shadow duration-200",
+          scrolled ? "border-white/10 shadow-sm" : "border-white/5",
         ].join(" ")}
       >
         <nav
@@ -267,17 +267,17 @@ export default function Landing({ lang, t }: { lang: Locale; t: Dict }) {
         >
           <a
             href={localePath(lang)}
-            className="mr-auto font-serif text-lg md:text-xl font-semibold tracking-tight text-[color:var(--color-ink)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[color:var(--color-ink)] rounded-sm"
+            className="mr-auto font-serif text-lg md:text-xl font-semibold tracking-tight text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[color:var(--color-ink)] rounded-sm"
           >
             Joel Suro Villalobos
           </a>
 
-          <ul className="hidden md:flex items-center gap-8 text-sm text-[color:var(--color-ink)]">
+          <ul className="hidden md:flex items-center gap-8 text-sm text-[#AFC3E8]">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="hover:text-[color:var(--color-muted)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[color:var(--color-ink)] rounded-sm"
+                  className="hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[color:var(--color-ink)] rounded-sm"
                 >
                   {link.label}
                 </a>
@@ -287,7 +287,7 @@ export default function Landing({ lang, t }: { lang: Locale; t: Dict }) {
 
           <ul
             aria-label="Idioma / Language / 语言"
-            className="flex items-center gap-1 text-sm md:pl-6 md:border-l border-[color:var(--color-hairline)]"
+            className="flex items-center gap-1 text-sm md:pl-6 md:border-l border-white/15"
           >
             {locales.map((l) => (
               <li key={l}>
@@ -299,8 +299,8 @@ export default function Landing({ lang, t }: { lang: Locale; t: Dict }) {
                   className={[
                     "px-2 py-1 rounded-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--color-ink)]",
                     l === lang
-                      ? "font-semibold text-[color:var(--color-ink)] underline underline-offset-4"
-                      : "text-[color:var(--color-muted)] hover:text-[color:var(--color-ink)]",
+                      ? "font-semibold text-white underline underline-offset-4 decoration-[color:var(--color-signal)]"
+                      : "text-[#AFC3E8] hover:text-white",
                   ].join(" ")}
                 >
                   {LOCALE_LABEL[l]}
@@ -312,6 +312,52 @@ export default function Landing({ lang, t }: { lang: Locale; t: Dict }) {
       </header>
 
       <main>
+        {/* SECCIÓN 1b: ENCABEZADO DE MARCA (docs/DESIGN.md) */}
+        <section
+          aria-labelledby="hero-title"
+          className="bg-[color:var(--color-night)] text-white"
+        >
+          <div className="max-w-6xl mx-auto px-6 md:px-12 py-16 md:py-20 grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+            <div className="md:col-span-6">
+              <Reveal>
+                <p className="text-xs md:text-sm uppercase tracking-[0.2em] font-medium text-[color:var(--color-signal)]">
+                  {t.hero.kicker}
+                </p>
+              </Reveal>
+              <Reveal delay={80}>
+                <h1
+                  id="hero-title"
+                  className="mt-5 text-4xl md:text-6xl leading-[1.03] text-white"
+                >
+                  {t.hero.title}
+                </h1>
+              </Reveal>
+              <Reveal delay={160}>
+                <p className="mt-6 text-base md:text-lg leading-relaxed text-[#C9D6EE] max-w-xl">
+                  {t.hero.body}
+                </p>
+                <div className="mt-8 flex flex-wrap gap-3 text-sm">
+                  <a href="https://www.omna.club/" target="_blank" rel="noopener" className="border border-white/20 px-4 py-2 rounded-sm hover:border-white/50 transition-colors">
+                    {t.work.omna.rol} · OMNA
+                  </a>
+                  <a href="https://www.aismx.org/" target="_blank" rel="noopener" className="border border-[color:var(--color-safety)] text-[color:var(--color-safety)] px-4 py-2 rounded-sm hover:bg-[color:var(--color-safety)]/10 transition-colors">
+                    {t.work.aismx.rol} · {t.work.aismx.org}
+                  </a>
+                </div>
+              </Reveal>
+            </div>
+            <Reveal delay={120} className="md:col-span-6">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/escena.svg"
+                alt=""
+                aria-hidden="true"
+                className="w-full h-auto"
+              />
+            </Reveal>
+          </div>
+        </section>
+
         {/* SECCIÓN 2: SOBRE MÍ (arriba: es perfil público, no página de ventas) */}
         <section
           id="sobre-mi"
@@ -320,12 +366,12 @@ export default function Landing({ lang, t }: { lang: Locale; t: Dict }) {
         >
           <div className="max-w-6xl mx-auto px-6 md:px-12 py-24 md:py-32">
             <Reveal>
-              <h1
+              <h2
                 id="sobre-mi-title"
                 className="text-4xl md:text-6xl font-bold leading-tight tracking-tight text-[color:var(--color-ink)] max-w-4xl"
               >
                 {t.about.label}
-              </h1>
+              </h2>
             </Reveal>
 
             {/* Bio + foto editorial */}
@@ -383,6 +429,10 @@ export default function Landing({ lang, t }: { lang: Locale; t: Dict }) {
               {trabajo(t).map((c, i) => (
                 <Reveal key={c.org} delay={160 + i * 80}>
                   <div className="pt-8 border-t border-[color:var(--color-hairline)]">
+                    <div className="mb-8 rounded-sm bg-[color:var(--color-night)] p-4">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={c.escena} alt="" aria-hidden="true" className="w-full h-48 object-contain" />
+                    </div>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={c.logo}

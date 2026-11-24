@@ -10,6 +10,11 @@ const es = {
       "Perfil de Joel Suro Villalobos: CTO de OMNA, estrategia en AI Safety México e investigación en confiabilidad de modelos de lenguaje.",
   },
   whatsappText: "Hola Joel, vengo de joelsuro.com. ",
+  hero: {
+    kicker: "Manufactura · Agentes de IA · AI safety",
+    title: "IA que funciona en la operación real.",
+    body: "CTO de OMNA, donde construimos agentes de IA para fabricantes y distribuidoras. Estrategia en AI Safety México, donde medimos cuándo fallan los modelos.",
+  },
   nav: { about: "Sobre mí", work: "Qué hago", research: "Investigación", contact: "Contacto" },
   about: {
     label: "Sobre mí",
@@ -23,7 +28,7 @@ const es = {
   },
   work: {
     label: "Qué hago",
-    title: "IA que funciona en la operación real.",
+    title: "Dónde lo hago.",
     omna: {
       rol: "CTO",
       body: "Diseño y construyo agentes de IA que operan dentro de distribuidoras y fabricantes: leen pedidos, consultan el ERP y resuelven lo repetitivo para que el equipo atienda las excepciones.",
@@ -65,6 +70,11 @@ const en: Dict = {
       "Profile of Joel Suro Villalobos: CTO at OMNA, strategy at AI Safety Mexico, and research on language model reliability.",
   },
   whatsappText: "Hi Joel, I found you on joelsuro.com. ",
+  hero: {
+    kicker: "Manufacturing · AI agents · AI safety",
+    title: "AI that works in real operations.",
+    body: "CTO at OMNA, building AI agents for manufacturers and distributors. Strategy at AI Safety Mexico, measuring when models fail.",
+  },
   nav: { about: "About", work: "What I do", research: "Research", contact: "Contact" },
   about: {
     label: "About",
@@ -78,7 +88,7 @@ const en: Dict = {
   },
   work: {
     label: "What I do",
-    title: "AI that works in real operations.",
+    title: "Where I do it.",
     omna: {
       rol: "CTO",
       body: "I design and build AI agents that run inside distributors and manufacturers: they read orders, query the ERP and handle the repetitive work so the team can focus on the exceptions.",
@@ -118,6 +128,11 @@ const zh: Dict = {
       "Joel Suro Villalobos：OMNA 首席技术官，负责 AI Safety México 的战略，研究语言模型的可靠性。",
   },
   whatsappText: "Hi Joel, I found you on joelsuro.com. ",
+  hero: {
+    kicker: "制造业 · AI 智能体 · AI 安全",
+    title: "在真实运营中发挥作用的 AI。",
+    body: "OMNA 首席技术官，为制造商和分销商构建 AI 智能体。AI Safety México 战略负责人，研究模型何时失效。",
+  },
   nav: { about: "关于我", work: "我的工作", research: "研究", contact: "联系" },
   about: {
     label: "关于我",
@@ -131,7 +146,7 @@ const zh: Dict = {
   },
   work: {
     label: "我的工作",
-    title: "在真实运营中发挥作用的 AI。",
+    title: "我在哪里做这些。",
     omna: {
       rol: "首席技术官",
       body: "我设计并构建在分销商和制造商内部运行的 AI 智能体：读取订单、查询 ERP、处理重复性工作，让团队专注于例外情况。",

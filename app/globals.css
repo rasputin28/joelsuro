@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
+/* Tokens de marca usados en clases arbitrarias: van en :root para que siempre se emitan. */
 :root {
+  --color-night: #071430;
+  --color-signal: #22d3ee;
+  --color-safety: #f5b544;
   --background: #ffffff;
   --foreground: #1f2937;
 }
